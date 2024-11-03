@@ -1,15 +1,15 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Simple, Efficient & Collaborative",
+  "text": "Taskify is designed for ease of use, letting you manage tasks and projects effortlessly without needing to adjust complex settings.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "Why Taskify?",
+      "content": "Taskify combines task tracking, project organization, and team collaboration in a single, streamlined platform, boosting productivity for teams and individuals alike.",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "Why JSON Data Structure?",
+      "content": "With JSON-based data storage, Taskify allows you to manage tasks, comments, and project details quickly and flexibly, without requiring technical knowledge.",
       "icon": "notes.svg"
     }
   ]

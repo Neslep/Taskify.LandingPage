@@ -1,12 +1,12 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Taskify - Simplify Task & Project Management",
+  "text": "Taskify helps you streamline task tracking, enhance team collaboration, and stay organized—all in one place. Ideal for professionals and teams who aim for peak productivity with ease.",
   "button": [
     {
-      "title": "Explore"
+      "title": "Get Started"
     },
     {
-      "title": "Learn more",
+      "title": "See Features",
       "color": "#fff"
     }
   ]

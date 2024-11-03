@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
 import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
-import { SvgIcon } from "../../common/SvgIcon";
+import taskifyCircle from "../../common/SvgIcon/TaskifyCircle.png";
 import { Button } from "../../common/Button";
 import {
   HeaderSection,
@@ -63,7 +63,12 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" width="101px" height="64px" />
+            <img
+              src={taskifyCircle}
+              width="101px"
+              height="101px"
+              alt="Taskify"
+            />
           </LogoContainer>
           <NotHidden>
             <MenuItem />
