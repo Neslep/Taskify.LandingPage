@@ -3,7 +3,8 @@
   "text": "Taskify helps you streamline task tracking, enhance team collaboration, and stay organized—all in one place. Ideal for professionals and teams who aim for peak productivity with ease.",
   "button": [
     {
-      "title": "Get Started"
+      "title": "Get Started",
+      "link": "https://taskifyvn.vercel.app/sign-in"
     },
     {
       "title": "See Features",

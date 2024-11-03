@@ -25,6 +25,15 @@ const RightBlock = ({
       behavior: "smooth",
     });
   };
+
+  const handleButtonClick = (title: string, link: string) => {
+    if (title === "Get Started") {
+      window.location.href = link;
+    } else if (title === "See Features") {
+      scrollTo("about");
+    }
+  };
+
   return (
     <RightBlockContainer>
       <Fade direction="right">
@@ -41,7 +50,7 @@ const RightBlock = ({
                         key={id}
                         color={item.color}
                         fixedWidth={true}
-                        onClick={() => scrollTo("about")}
+                        onClick={() => handleButtonClick(item.title, item.link)}
                       >
                         {t(item.title)}
                       </Button>

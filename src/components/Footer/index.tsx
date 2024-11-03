@@ -2,6 +2,7 @@ import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
+import taskifyCircle from "../../common/SvgIcon/TaskifyCircle.png";
 
 import i18n from "i18next";
 import {
@@ -12,7 +13,7 @@ import {
   LogoContainer,
   Para,
   Large,
-  Chat,
+  // Chat,
   Empty,
   FooterContainer,
   Language,
@@ -21,29 +22,29 @@ import {
   LanguageSwitchContainer,
 } from "./styles";
 
-interface SocialLinkProps {
-  href: string;
-  src: string;
-}
+// interface SocialLinkProps {
+//   href: string;
+//   src: string;
+// }
 
 const Footer = ({ t }: any) => {
   const handleChange = (language: string) => {
     i18n.changeLanguage(language);
   };
 
-  const SocialLink = ({ href, src }: SocialLinkProps) => {
-    return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        key={src}
-        aria-label={src}
-      >
-        <SvgIcon src={src} width="25px" height="25px" />
-      </a>
-    );
-  };
+  // const SocialLink = ({ href, src }: SocialLinkProps) => {
+  //   return (
+  //     <a
+  //       href={href}
+  //       target="_blank"
+  //       rel="noopener noreferrer"
+  //       key={src}
+  //       aria-label={src}
+  //     >
+  //       <SvgIcon src={src} width="25px" height="25px" />
+  //     </a>
+  //   );
+  // };
 
   return (
     <>
@@ -56,9 +57,9 @@ const Footer = ({ t }: any) => {
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
+              {/* <a href="mailto:l.qqbadze@gmail.com">
                 <Chat>{t(`Let's Chat`)}</Chat>
-              </a>
+              </a> */}
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
@@ -113,14 +114,14 @@ const Footer = ({ t }: any) => {
                     height="30px"
                   />
                 </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("es")}>
+                {/* <LanguageSwitch onClick={() => handleChange("es")}>
                   <SvgIcon
                     src="spain.svg"
                     aria-label="homepage"
                     width="30px"
                     height="30px"
                   />
-                </LanguageSwitch>
+                </LanguageSwitch> */}
               </LanguageSwitchContainer>
             </Col>
           </Row>
@@ -135,16 +136,16 @@ const Footer = ({ t }: any) => {
           >
             <NavLink to="/">
               <LogoContainer>
-                <SvgIcon
-                  src="logo.svg"
-                  aria-label="homepage"
+                <img
+                  src={taskifyCircle}
                   width="101px"
-                  height="64px"
+                  height="101px"
+                  alt="Taskify"
                 />
               </LogoContainer>
             </NavLink>
             <FooterContainer>
-              <SocialLink
+              {/* <SocialLink
                 href="https://github.com/Adrinlol/create-react-app-adrinlol"
                 src="github.svg"
               />
@@ -165,7 +166,7 @@ const Footer = ({ t }: any) => {
                   src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=adrinlol&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
                   alt="Buy me a pizza"
                 />
-              </a>
+              </a> */}
             </FooterContainer>
           </Row>
         </Container>
