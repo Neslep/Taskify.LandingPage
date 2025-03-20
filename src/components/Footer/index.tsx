@@ -53,14 +53,81 @@ const Footer = ({ t }: any) => {
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Tell us everything")}</Large>
-              <Para>
-                {t(`Do you have any question? Feel free to reach out.`)}
-              </Para>
-              {/* <a href="mailto:l.qqbadze@gmail.com">
-                <Chat>{t(`Let's Chat`)}</Chat>
-              </a> */}
+
+              {/* Click vào số điện thoại để gọi */}
+              <a
+                href="tel:0969118549"
+                style={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{ marginRight: "8px" }}
+                >
+                  <path d="M6.62 10.79A15.91 15.91 0 0013.21 17.38L16 14.59c.2-.2.52-.24.77-.08a11.91 11.91 0 004.62 1.06c.55 0 1 .45 1 1V21c0 .55-.45 1-1-1A19.92 19.92 0 012 3c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 .04 1.6.26 3.16.68 4.65.07.24.03.51-.08.76L6.62 10.79z" />
+                </svg>
+                {t("0969118549")}
+              </a>
+
+              {/* Click vào Facebook để mở fanpage */}
+              <a
+                href="https://www.facebook.com/taskifyvn"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  display: "flex",
+                  alignItems: "center",
+                  marginTop: "10px",
+                }}
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{ marginRight: "8px" }}
+                >
+                  <path d="M9 8H7v4h2v12h5V12h3.642l.358-4H14V6.084c0-.992.093-1.584 1.583-1.584H19V0h-3.415C11.332 0 9 1.79 9 5.084V8z" />
+                </svg>
+                {t("Taskify FanPage")}
+              </a>
+
+              {/* Click vào Email để gửi thư */}
+              <a
+                href="mailto:taskifyvn@gmail.com"
+                style={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  display: "flex",
+                  alignItems: "center",
+                  marginTop: "10px",
+                }}
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{ marginRight: "8px" }}
+                >
+                  <path d="M12 12.713L2 6V18h20V6l-10 6.713zM22 4v16H2V4l10 6.75L22 4z" />
+                </svg>
+                {t("taskifyvn@gmail.com")}
+              </a>
             </Col>
+
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
               <Large to="/" left="true">
